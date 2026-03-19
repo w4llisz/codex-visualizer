@@ -1,0 +1,14 @@
+{
+  "name": "codex-visualizer",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "serve": "node tools/serve-static.mjs",
+    "start:codex": "node tools/start-codex-app-server.mjs",
+    "check": "node --input-type=module -e \"import('./src/main.js')\"",
+    "plugin:list": "node tools/plugin-marketplace.mjs list",
+    "plugin:read": "node tools/plugin-marketplace.mjs read codex-visualizer",
+    "plugin:install": "node tools/plugin-marketplace.mjs install codex-visualizer"
+  }
+}
